@@ -1,7 +1,7 @@
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image';
-import Rocket from '../images/Rocket.gif'
-import Rocket2 from '../images/Rocket2.gif'
+import Rocket from '../images/rocket.gif'
+import Rocket2 from '../images/rocket2.gif'
 
 
 
