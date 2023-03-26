@@ -1,0 +1,1061 @@
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  padding-bottom: 0;
+  min-height: 100vh;
+}
+
+.logo
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.horizontalList
+{
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: -5rem;
+  font-weight: 600;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+
+}
+
+
+.horizontalList li 
+{
+  margin: 1rem; 
+  margin-right: 4rem;
+}
+
+.horizontalList li a
+{
+  position: relative;
+  width: 100%;
+}
+
+.horizontalList.test
+{
+  display: flex;
+  list-style-type: none;
+}
+
+.verticalList
+{
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.verticalList li
+{
+  margin: 1rem;
+  margin-left: 0;
+}
+
+.button
+{
+  background-color: whitesmoke;
+  padding: 1rem;
+  background-color: whitesmoke;
+  color: black;
+  border : 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  height: 44px;
+}
+
+.button:hover
+{
+  color: white;
+  background-color: rgb(5, 5, 5);
+  border-color: white;
+  transition: 0.2s all ease-in-out;
+}
+
+.navbar
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem; 
+  border: 2px solid rgb(5, 5, 5);
+  position: fixed;
+  width: 90%;
+  background-color: whitesmoke;
+  z-index: 25;
+  transition: 2s all ease-in-out;
+}
+
+.menu {
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 20px;
+}
+
+
+
+
+
+.blurNav
+{
+  position: fixed;
+  z-index: 20;
+  width: 100vw;
+  height: 22vh;
+  background-color : rgba(245,245,245,0.1);
+  backdrop-filter: blur(20px);
+}
+
+.hero
+{
+  padding: 5rem;
+  width: 80%;
+  height: 80vh;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1
+{
+  margin-top: 15rem;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+.searchpage
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.searchpageContainer
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 5rem;
+}
+
+.searchPageParagraph
+{
+  font-size: 1.5rem;
+  margin: 5rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.searchpage div input
+{
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.5rem;  
+  border-radius: 0;
+}
+
+.searchform
+{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.searchbutton
+{
+  position: absolute;
+}
+
+.searchbutton
+{
+  color: white;
+  background-color: rgb(5, 5, 5);
+  border : 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem;
+  height: 100%;
+  width: 20%;
+  right: 0;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.searchbutton:hover
+{
+
+  background-color: whitesmoke;
+  color: black;
+  transition: 0.2s all ease-in-out;
+}
+.footer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100vw;
+  color: whitesmoke;
+  background-color: rgb(5, 5, 5);
+  padding: 5rem;
+}
+
+.footer div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.modalBody
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    z-index: 30;
+}
+
+.blurMask
+{
+  position: fixed;
+  z-index: 27;
+  top: 0vh;
+  background-color: rgba(5, 5, 5, 0.1);
+  backdrop-filter: blur(20px);
+  width: 100vw;
+  height: 100vh;
+}
+
+.modalContent
+{
+  position: relative;
+  width: 60%;
+  z-index: 40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: whitesmoke;
+  border: 3px solid rgb(5, 5, 5);
+}
+
+.employeeDetailsContainer
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 75%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.employeeImageContainer div
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0,0,0,0);
+  border: 2px solid rgb(5, 5, 5);
+}
+
+.topBorder
+{
+  top : -6%;
+  left: -8%;
+}
+
+.bottomBorder
+{
+  top : 6%;
+  left: 8%; 
+}
+
+.employeeImageContainer
+{
+  position: relative;
+}
+.employeeImageContainer img
+{
+  position: relative;
+  z-index: 20;
+}
+.employeeDetails
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+.employeeDetails h3
+{
+  font-size: 24px;
+}
+
+.employeeDetails p
+{
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 3px;
+  border-bottom: 1px solid rgb(5, 5, 5);
+}
+
+.closeButton
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  font-weight: 400;
+  font-size: 34px;
+  cursor: pointer;
+}
+
+
+.rocket {
+  position: absolute;
+  top: 25vh;
+  right: 15vw;
+  animation: silly-spin 300s ease-out infinite;
+  z-index: 1;
+}
+
+@keyframes silly-spin {
+  0% {
+    transform: translate(50%, 25vh) rotate(25deg);
+  }
+  100% {
+    transform: translate(-100vw, 0vh) rotate(9000deg);
+  }
+}
+
+
+.rocket2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: rotate(45deg);
+  animation: fly-arch 250s ease-out infinite;
+  z-index: 1;
+}
+
+@keyframes fly-arch {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+  }
+  100% {
+    transform: translate(100vw, -100vh) rotate(70deg);
+  }
+}
+
+
+@media only screen and (max-width: 380px) 
+{
+
+  .navbar
+  {
+    flex-direction: column;
+  }
+
+  .blurNav
+  {
+    height: 29vh;
+  }
+  .menu
+  {
+    display: block;
+  }
+
+  .horizontalList
+  {
+    display: none;
+    flex-direction: column;
+    margin-top: 8vh;
+    list-style-type: none;
+    width: 100%;
+    left: 0;
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+    z-index: 1;
+    text-align: center;
+  }
+
+  .logo
+  {
+    align-items: center;
+  }
+
+  .hero
+  {
+    height: 100vh;
+    font-size: 18px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero h1
+  {
+    margin-top: 40%;
+  }
+
+  .searchpage
+  {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 4rem;
+    width: 100%;
+  }
+  .searchpageContainer
+  {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .searchpage div input
+  {
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+
+  .searchbutton
+  {
+    font-size: 1rem;
+    width: 30%;
+  }
+
+  .footer
+  {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 3rem;
+    justify-content: space-around;
+  }
+
+  .footer div
+  {
+    margin-top: 3rem;
+  } 
+
+  .modalContent
+  {
+    width: 90%;
+  }
+  
+  .employeeDetailsContainer
+  {
+    flex-direction: column;
+    
+  }
+
+  .employeeDetails
+  {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .employeeDetails p, .employeeDetails h3
+  {
+    margin-top: 2rem;
+    word-wrap: break-word;
+  }
+
+
+  .employeeImageContainer 
+  {
+    margin-top: 3rem;
+  }
+
+  .employeeImageContainer img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+  .closeButton
+  {
+    top: -20px;
+    right: -5px;
+  }
+}
+
+@media only screen and (max-width: 600px)
+{
+  .navbar
+  {
+    flex-direction: column;
+  }
+
+  .blurNav
+  {
+    height: 24%;
+  }
+  .menu
+  {
+    display: block;
+  }
+
+  .horizontalList
+  {
+    display: none;
+    flex-direction: column;
+    margin-top: 8vh;
+    list-style-type: none;
+    width: 100%;
+    left: 0;
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+    z-index: 1;
+    text-align: center;
+  }
+
+  .logo
+  {
+    align-items: center;
+  }
+
+  .hero
+  {
+    height: 100vh;
+    font-size: 18px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero h1
+  {
+    margin-top: 40%;
+  }
+
+  .searchpage
+  {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 4rem;
+    width: 100%;
+  }
+  .searchpageContainer
+  {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .searchpage div input
+  {
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+
+  .searchbutton
+  {
+    font-size: 1rem;
+    width: 30%;
+  }
+
+  .footer
+  {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 3rem;
+    justify-content: space-around;
+  }
+
+  .footer div
+  {
+    margin-top: 3rem;
+  } 
+
+  .modalContent
+  {
+    width: 90%;
+  }
+  
+  .employeeDetailsContainer
+  {
+    flex-direction: column;
+    
+  }
+
+  .employeeDetails
+  {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .employeeDetails p, .employeeDetails h3
+  {
+    margin-top: 2rem;
+    word-wrap: break-word;
+  }
+
+
+  .employeeImageContainer 
+  {
+    margin-top: 3rem;
+  }
+
+  .employeeImageContainer img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+  .closeButton
+  {
+    top: -20px;
+    right: -5px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 601px)
+{
+  .navbar
+  {
+    flex-direction: column;
+  }
+
+  .blurNav
+  {
+    height: 24%;
+  }
+  .menu
+  {
+    display: block;
+  }
+
+  .horizontalList
+  {
+    display: none;
+    flex-direction: column;
+    margin-top: 8vh;
+    list-style-type: none;
+    width: 100%;
+    left: 0;
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+    z-index: 1;
+    text-align: center;
+  }
+
+  .logo
+  {
+    align-items: center;
+  }
+
+  .hero
+  {
+    height: 100vh;
+    font-size: 18px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero h1
+  {
+    margin-top: 40%;
+  }
+
+  .searchpage
+  {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 4rem;
+    width: 100%;
+  }
+  .searchpageContainer
+  {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .searchpage div input
+  {
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+
+  .searchbutton
+  {
+    font-size: 1rem;
+    width: 30%;
+  }
+
+  .footer
+  {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 3rem;
+    justify-content: space-around;
+  }
+
+  .footer div
+  {
+    margin-top: 3rem;
+  } 
+
+  .modalContent
+  {
+    width: 90%;
+  }
+  
+  .employeeDetailsContainer
+  {
+    flex-direction: column;
+    
+  }
+
+  .employeeDetails
+  {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .employeeDetails p, .employeeDetails h3
+  {
+    margin-top: 2rem;
+    word-wrap: break-word;
+  }
+
+
+  .employeeImageContainer 
+  {
+    margin-top: 3rem;
+  }
+
+  .employeeImageContainer img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+  .closeButton
+  {
+    top: -20px;
+    right: -5px;
+  }
+
+  .employeeImageContainer div
+  {
+    width: 55%;
+  }
+
+  .topBorder
+  {
+    left: 18%;
+  }
+
+  .bottomBorder
+  {
+    left: 26%;
+  }
+}
+
+@media only screen and (min-width: 769px ) and (max-width: 900px)
+{
+  .navbar
+  {
+    flex-direction: column;
+  }
+
+  .blurNav
+  {
+    height: 24%;
+  }
+  .menu
+  {
+    display: block;
+  }
+
+  .horizontalList
+  {
+    display: none;
+    flex-direction: column;
+    margin-top: 8vh;
+    list-style-type: none;
+    width: 100%;
+    left: 0;
+    transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+    z-index: 1;
+    text-align: center;
+  }
+
+  .logo
+  {
+    align-items: center;
+  }
+
+  .hero
+  {
+    height: 100vh;
+    font-size: 18px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero h1
+  {
+    margin-top: 40%;
+  }
+
+  .searchpage
+  {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 4rem;
+    width: 100%;
+  }
+  .searchpageContainer
+  {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+
+  .searchpage div input
+  {
+    width: 100%;
+    font-size: 1rem;
+    padding-left: 1rem;
+  }
+
+  .searchbutton
+  {
+    font-size: 1rem;
+    width: 30%;
+  }
+
+  .footer
+  {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 3rem;
+    justify-content: space-around;
+  }
+
+  .footer div
+  {
+    margin-top: 3rem;
+  } 
+
+  .modalContent
+  {
+    width: 90%;
+  }
+  
+  .employeeDetailsContainer
+  {
+    flex-direction: column;
+    
+  }
+
+  .employeeDetails
+  {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .employeeDetails p, .employeeDetails h3
+  {
+    margin-top: 2rem;
+    word-wrap: break-word;
+  }
+
+
+  .employeeImageContainer 
+  {
+    margin-top: 3rem;
+  }
+
+  .employeeImageContainer img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+  .closeButton
+  {
+    top: -20px;
+    right: -5px;
+  }
+
+  .employeeImageContainer div
+  {
+    width: 55%;
+  }
+
+  .topBorder
+  {
+    left: 18%;
+  }
+
+  .bottomBorder
+  {
+    left: 26%;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1024px)
+{
+
+  .modalContent
+  {
+    width: 90%;
+  }
+  
+  .employeeDetailsContainer
+  {
+    flex-direction: column;
+    
+  }
+
+  .employeeDetails
+  {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .employeeDetails p, .employeeDetails h3
+  {
+    margin-top: 2rem;
+    word-wrap: break-word;
+  }
+
+
+  .employeeImageContainer 
+  {
+    margin-top: 3rem;
+  }
+
+  .employeeImageContainer img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+  .closeButton
+  {
+    top: -20px;
+    right: -5px;
+  }
+
+  .employeeImageContainer div
+  {
+    width: 48%;
+  }
+
+}
+
+@media only screen and (max-width: 1023px ) and (orientation: landscape) 
+{
+  .modalContent
+  {
+    width: 90%;
+  }
+  
+  .employeeDetailsContainer
+  {
+    flex-direction: column;
+    
+  }
+
+  .employeeDetails
+  {
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .employeeDetails p, .employeeDetails h3
+  {
+    margin-top: 2rem;
+    word-wrap: break-word;
+  }
+
+
+  .employeeImageContainer 
+  {
+    margin-top: 3rem;
+  }
+
+  .employeeImageContainer img
+  {
+    max-width: 100%;
+    height: auto;
+  }
+  .closeButton
+  {
+    top: -20px;
+    right: -5px;
+  }
+
+  .employeeImageContainer div
+  {
+    width: 48%;
+  }
+
+  .topBorder
+  {
+    left: 23%;
+  }
+
+  .bottomBorder
+  {
+    left: 31%;
+  }
+}
+
+@supports not (backdrop-filter: blur(10px))
+{
+}
