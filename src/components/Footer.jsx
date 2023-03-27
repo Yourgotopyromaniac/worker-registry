@@ -1,5 +1,6 @@
 import styles from '@/styles/Home.module.css'
-import Logo from './Logo';
+import Image from 'next/image';
+import LogoImage from '../images/SpcUniLogo-12.svg'
 
 const Footer = ()=>{
 
@@ -15,7 +16,10 @@ const Footer = ()=>{
                 </div>
 
                 <div>
-                   <Logo/>
+                   <Image
+                   src={LogoImage}
+                   alt="company logo"
+                   />
                 </div>
         </div>
     )

@@ -1,13 +1,15 @@
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image';
-import logo from '../images/logo.png'
+import LogoImage1 from '../images/SpcUniLogo-13.svg'
 const Logo = ()=>
 {
     return (
         <span className={styles.logo}>
 
-            <h1>Space Universe</h1>
-            <h3>Africa</h3>
+            <Image  
+             className={styles.logoStroke}
+             src={LogoImage1}
+             />
             
         </span>
     )

@@ -3,15 +3,12 @@ import Image from 'next/image';
 import Rocket from '../images/rocket.gif'
 import Rocket2 from '../images/rocket2.gif'
 
-
-
-
 const Hero = ()=>{
 
     return (
         <>
         <div className={styles.hero}>   
-            <h1>Looking for someone from <span style={{color : "#0171bb"}}>Space Universe?</span> You&apos;ve come to the right place!</h1>
+            <h1>Looking for someone from <span style={{color : "#0071bb"}}>Space Universe? </span> You&apos;ve come to the right place!</h1>
         </div>
         
         <Image
