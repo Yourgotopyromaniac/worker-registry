@@ -2,39 +2,118 @@ import styles from '@/styles/Home.module.css'
 import SearchButton from './SearchButton';
 import SearchResultsModal from './SearchResultsModal';
 import React, { useState } from 'react';
-import Jane from '../images/singh.png'
-import John from '../images/judge.png'
+import Default from '../images/default.png'
+import Biyi from '../images/biyi.png'
+import Nnenna from '../images/nnenna.jpg'
 import Precious from '../images/precious.png'
+import Wale from '../images/wale.jpg'
+import Mide from '../images/mide.png'
+import Lanre from '../images/lanre.png'
+import Hope from '../images/hope.jpg'
+import Adams from '../images/adams.jpg'
 
 const employees = [
     {
       id: 1,
-      name: 'Jane Doe',
-      jobTitle: 'Software Engineer',
-      email: 'johndoe@company.com',
+      name: 'Tunji Idowu',
+      jobTitle: 'CEO/Founder',
+      email: 'tunji@spaceuniverse.africa',
       phone: '123-456-7890',
-      img : John
+      img : Default
       
     },
     {
       id: 2,
-      name: 'Jane Smith',
-      jobTitle: 'Project Manager',
-      email: 'janesmith@company.com',
+      name: 'Biyi Akangbe',
+      jobTitle: 'CTO',
+      email: 'biyi@spaceuniverse.africa',
       phone: '234-567-8901',
-      img : Jane
+      img : Biyi
       
     },
 
     {
       id: 3,
-      name: 'Precious Jane',
+      name: 'Nnenna Hunpatin',
+      jobTitle: 'Operations and brand marketing',
+      email: 'nnenna@communicationsarc.com',
+      phone: '123-456-7890',
+      img : Nnenna
+    },
+
+    {
+      id: 4,
+      name: 'Ayo',
+      jobTitle: 'Senior Software Engineer',
+      email: 'ayo@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+      
+    },
+
+    {
+      id: 5,
+      name: 'Ola Wale',
+      jobTitle: 'Creative Lead',
+      email: 'wale@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Wale
+    },
+
+    {
+      id: 6,
+      name: 'Hodo Irem',
+      jobTitle: 'Head of Human Resources',
+      email: 'hodo@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default 
+    },
+
+    {
+      id: 7,
+      name: 'Precious Etim',
       jobTitle: 'Product Designer',
       email: 'precious@spaceuniverse.africa',
-      phone: '123-456-7890',
+      phone: '234-567-8901',
       img : Precious
-      
-    }
+    },
+
+    {
+      id: 8,
+      name: 'Hodo Irem',
+      jobTitle: 'Head of Human Resources',
+      email: 'hodo@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default 
+    },
+
+    {
+      id: 9,
+      name: 'Ayomide Pereao',
+      jobTitle: 'Project Manager',
+      email: 'mide.pereao@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Mide
+    },
+
+    {
+      id: 10,
+      name: 'Olanrewaju',
+      jobTitle: 'UI/UX Designer',
+      email: 'olanrewaju@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Lanre
+    },
+
+    {
+      id: 11,
+      name: 'Adams',
+      jobTitle: 'Graphics Designer/Illustrator',
+      email: 'olanrewaju@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Lanre
+    },
+
     // ... add more workers here
 ];
 
@@ -43,20 +122,33 @@ const SearchPage = ()=>{
     const [searchInput, setSearchInput] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const [showModal, setShowModal] = useState(false);
+    const [noResults, setNoResults] = useState(false);
 
     const handleSearch = (event) => {
         event.preventDefault();
     
-    if (searchInput.trim() === ''){
+    const filteredEmployees = employees.filter(
+      (employee) => employee.name.toLowerCase().includes(searchInput.toLowerCase())
+      );
+    
+      console.log("searchResults:", searchResults);
+      console.log("filteredData:", filteredEmployees);
+    if(filteredEmployees.length === 0)
+    {
+      setNoResults(true);
+      setShowModal(true);
+    }
+    else if (searchInput.trim() === ''){
       return;
     }
-    const filteredEmployees = employees.filter(
-        (employee) => employee.name.toLowerCase().includes(searchInput.toLowerCase())
-        );
-        
-    setSearchResults(filteredEmployees);
-    setSearchInput('');
-    setShowModal(true);
+
+    else {      
+      setSearchResults(filteredEmployees);
+      setSearchInput('');
+      setShowModal(true);
+      setNoResults(false)
+    }
+
 
   }
 
@@ -84,7 +176,7 @@ const SearchPage = ()=>{
                      <SearchButton/>
                 </form>
 
-                {showModal && (<SearchResultsModal searchResults={searchResults} onClose={handleCloseModal} />)}
+                {showModal && (<SearchResultsModal searchResults={searchResults} noResults={noResults} onClose={handleCloseModal} />)}
             </div>
         </div>
     )
