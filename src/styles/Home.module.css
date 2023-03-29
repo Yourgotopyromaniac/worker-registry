@@ -403,7 +403,7 @@
     transform: translate(0, 0) rotate(45deg);
   }
   100% {
-    transform: translate(100vw, -100vh) rotate(70deg);
+    transform: translate(80vw, -100vh) rotate(70deg);
   }
 }
 
@@ -553,7 +553,7 @@
 
   .blurNav
   {
-    height: 24%;
+    height: 20%;
   }
   .menu
   {
@@ -686,7 +686,7 @@
 
   .blurNav
   {
-    height: 24%;
+    height: 20%;
   }
   .menu
   {
@@ -834,7 +834,7 @@
 
   .blurNav
   {
-    height: 24%;
+    height: 20%;
   }
   .menu
   {

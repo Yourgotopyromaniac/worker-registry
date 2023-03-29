@@ -114,7 +114,124 @@ const employees = [
       img : Lanre
     },
 
-    // ... add more workers here
+    {
+      id: 12,
+      name: 'Awoyemi Abiola',
+      jobTitle: 'Frontend Developer',
+      email: 'abiola@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 13,
+      name: 'Oyewole Oluwatobi',
+      jobTitle: 'Frontend Developer',
+      email: 'tobi@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 14,
+      name: 'Mayowa Adebisi',
+      jobTitle: 'Frontend Developer',
+      email: 'mayowa@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 15,
+      name: 'Abdulhameed Anofi',
+      jobTitle: 'Backend Developer',
+      email: 'abdulhameed@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 16,
+      name: 'Matthew Kayode',
+      jobTitle: 'Backend Developer',
+      email: 'kayode@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 17,
+      name: 'Hope Mgbebuihe',
+      jobTitle: 'Sales Professional',
+      email: 'hope.mgbebuihe@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Hope
+    },
+
+    {
+      id: 18,
+      name: 'Anjorin Molayo',
+      jobTitle: 'Sales Professional',
+      email: 'molayoanjorin@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 19,
+      name: 'Damilola Ashipa',
+      jobTitle: 'Sales Professional',
+      email: 'damilola@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 20,
+      name: 'Edidiong',
+      jobTitle: 'Sales Professional',
+      email: 'edidiong@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 20,
+      name: 'Olamide Alaba',
+      jobTitle: 'COO',
+      email: 'olamide@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 21,
+      name: 'Mercy Oluwatoba',
+      jobTitle: 'Social Media Strategist',
+      email: 'mercy@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 22,
+      name: 'Tunde Alabi',
+      jobTitle: 'Backend Developer',
+      email: 'tunde@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+    {
+      id: 24,
+      name: 'Chioma Opara',
+      jobTitle: 'Mobile Developer Intern',
+      email: 'chioma@spaceuniverse.africa',
+      phone: '234-567-8901',
+      img : Default
+    },
+
+
 ];
 
 const SearchPage = ()=>{
