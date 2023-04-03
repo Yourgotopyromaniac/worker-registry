@@ -79,15 +79,6 @@ const employees = [
     },
 
     {
-      id: 8,
-      name: 'Hodo Irem',
-      jobTitle: 'Head of Human Resources',
-      email: 'hodo@spaceuniverse.africa',
-      phone: '234-567-8901',
-      img : Default 
-    },
-
-    {
       id: 9,
       name: 'Ayomide Pereao',
       jobTitle: 'Project Manager',
@@ -109,9 +100,9 @@ const employees = [
       id: 11,
       name: 'Adams',
       jobTitle: 'Graphics Designer/Illustrator',
-      email: 'olanrewaju@spaceuniverse.africa',
+      email: 'adams@spaceuniverse.africa',
       phone: '234-567-8901',
-      img : Lanre
+      img : Adams
     },
 
     {
