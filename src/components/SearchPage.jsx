@@ -100,7 +100,7 @@ const employees = [
       id: 11,
       name: 'Adams',
       jobTitle: 'Graphics Designer/Illustrator',
-      email: 'adams@spaceuniverse.africa',
+      email: 'Adamsbenard20@gmail.com',
       phone: '234-567-8901',
       img : Adams
     },
